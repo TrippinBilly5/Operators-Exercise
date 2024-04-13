@@ -14,6 +14,11 @@ double radius = double.Parse(Console.ReadLine());
 double area = AreaOfCircle(radius);
 Console.WriteLine($"The area of a circle with radius of {radius} is {area}.");
 
+var i = 3;
+var j = 4;
+var k = ++i * j++;
+Console.WriteLine($"i = {i}, j = {j}, k = {k}");
+
 double AreaOfCircle( double radius)
 {
     return Math.PI * Math.Pow(radius, 2);
